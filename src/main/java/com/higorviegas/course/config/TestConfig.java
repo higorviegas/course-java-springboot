@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Profile;
 
 import com.higorviegas.course.entities.Category;
 import com.higorviegas.course.entities.Order;
+import com.higorviegas.course.entities.OrderItem;
 import com.higorviegas.course.entities.Product;
 import com.higorviegas.course.entities.User;
 import com.higorviegas.course.entities.enums.OrderStatus;
@@ -70,6 +71,7 @@ public class TestConfig implements CommandLineRunner {
 		userRepository.saveAll(Arrays.asList(u1, u2));
 		
 		orderRepository.saveAll(Arrays.asList(o1, o2, o3));
+		
 		
 		
 	}
